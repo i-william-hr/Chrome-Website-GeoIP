@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "IP Country (geo.py backend)",
+  "version": "1.0.0",
+  "description": "Shows the country of the active site's IP using geo.py backend.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://192.71.151.19:5050/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "IP Country"
+  }
+}
